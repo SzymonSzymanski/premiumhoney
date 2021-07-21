@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Rock+Salt&display=swap");
+.first-letter {
+  position: relative; }
+  .first-letter::before {
+    position: absolute;
+    content: attr(first-letter);
+    top: 0;
+    left: -150%;
+    font-size: 12.5rem;
+    line-height: 1;
+    color: #1d1c1c;
+    opacity: 10%;
+    font-weight: 400; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 50%; }
+  @media only screen and (min-width: 37.5em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (min-width: 56.25em) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(106deg, #dbd8d8 0%, #fcfcfc 50%, #e8e4e4 100%);
+  padding-bottom: 400px; }
+
+::selection {
+  background-color: rgba(247, 168, 3, 0.6);
+  text-shadow: -1px 1px 0px #fffecef8, -2px 2px 0px rgba(247, 168, 3, 0.9), -3px 3px 0px #fdf3bf; }
+
+.header {
+  position: relative;
+  padding: 20rem 3rem 0 3rem;
+  height: 100vh; }
+  @media only screen and (min-width: 37.5em) {
+    .header {
+      padding: 20rem 10rem 0 10rem; } }
+  .header__headline {
+    margin: 0 0 4.2rem;
+    width: 45rem;
+    font-family: "Rock Salt", cursive;
+    font-size: 7.6rem;
+    letter-spacing: 0.15em;
+    line-height: 1.65;
+    color: #1d1c1c; }
+  .header__paragraph {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.9;
+    color: #1d1c1c;
+    padding: 1.65rem 0;
+    width: 45rem;
+    letter-spacing: 0.15em; }
+  .header__cta, .header__cta:link, .header__cta:visited {
+    display: block;
+    margin-top: 5rem;
+    padding: 1.7rem 3.8rem;
+    width: fit-content;
+    border-radius: 12px;
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #1d1c1c;
+    background: radial-gradient(circle at center, #f6c358 0%, #f7a803 70%);
+    box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
+    transition: all 0.2s ease; }
+  @media (hover: hover) {
+    .header__cta:hover {
+      transform: translateY(-2px);
+      background: radial-gradient(circle at center, #f6c358 5%, #f7a803 75%);
+      box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25); } }
+  .header__cta:active, .header__cta:focus {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25); }
+  .header__decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+    z-index: -1; }
+    .header__decorations img {
+      pointer-events: none; }
+  .header__image-1 {
+    position: absolute;
+    top: 0;
+    left: 80.5%; }
+  .header__image-2 {
+    position: absolute;
+    top: 3%;
+    left: 70%; }
+  .header__image-3 {
+    position: absolute;
+    top: 21%;
+    left: 47%;
+    width: 590px;
+    z-index: -1; }
+  .header__image-4 {
+    position: absolute;
+    top: 50%;
+    left: 89%; }
+  .header__image-4-1 {
+    position: absolute;
+    top: 58%;
+    left: 94%;
+    width: 230px; }
+  .header__image-5 {
+    position: absolute;
+    top: 72.5%;
+    left: 60%; }
+  .header__image-6 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 310px; }
+  .header__image-7 {
+    position: absolute;
+    top: 14%;
+    left: 30%; }
+
+.mission {
+  padding: 44rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (min-width: 37.5em) {
+    .mission {
+      padding: 44rem 10rem 0 10rem; } }
+  .mission__image {
+    width: 57rem; }
+  .mission__text-box {
+    width: 54rem; }
+  .mission__headline {
+    font-family: "Rock Salt", cursive;
+    font-size: 3.3rem;
+    letter-spacing: 0.18em;
+    color: #1d1c1c; }
+  .mission__paragraph {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.9;
+    color: #1d1c1c;
+    width: 53rem;
+    letter-spacing: 0.18em; }
+
+.products {
+  padding: 14rem 3rem 0 3rem; }
+  @media only screen and (min-width: 37.5em) {
+    .products {
+      padding: 14rem 10rem 0 10rem; } }
+  .products__headline {
+    font-family: "Rock Salt", cursive;
+    font-size: 3.3rem;
+    letter-spacing: 0.18em;
+    color: #1d1c1c;
+    padding-left: 70px; }
+  .products__paragraph {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.9;
+    color: #1d1c1c;
+    padding-left: 70px;
+    width: 100%;
+    letter-spacing: 0.18em; }
+  .products__container {
+    margin-top: 12.5rem;
+    display: flex;
+    justify-content: space-between; }
+  .products__products-box {
+    display: flex;
+    gap: 2.5rem; }
+  .products__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 33rem;
+    cursor: pointer;
+    background-color: #fbfbfb;
+    border-radius: 12px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.18);
+    transition: all 0.2s; }
+    @media (hover: hover) {
+      .products__product:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.18); } }
+    .products__product:active, .products__product:focus {
+      transform: translateY(1px);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.18); }
+
+.filter-box {
+  margin-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem; }
+  .filter-box__title {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 1.9;
+    letter-spacing: 0.18em;
+    color: #1d1c1c;
+    align-self: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: default; }
+  .filter-box__option {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 1.9;
+    letter-spacing: 0.18em;
+    color: #1d1c1c;
+    padding: 10px 40px 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    text-align: start;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fbfbfb;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
+    transition: all 0.2s ease; }
+    .filter-box__option.active .filter-box__nav-img path {
+      fill: #f7a803; }
+    @media (hover: hover) {
+      .filter-box__option:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25); }
+        .filter-box__option:hover:not(.active) .filter-box__nav-img {
+          stroke-dasharray: 445.265, 0;
+          stroke-dashoffset: 0; }
+          .filter-box__option:hover:not(.active) .filter-box__nav-img path {
+            stroke: #e49b03; } }
+    .filter-box__option:active, .filter-box__option:focus {
+      transform: translateY(1px);
+      box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25); }
+  .filter-box__nav-img {
+    margin-right: 20px;
+    width: 30px;
+    height: 27px;
+    stroke-dasharray: 0, 800;
+    stroke-dashoffset: -218.132; }
+    .filter-box__nav-img path {
+      transition: all 0.3s ease; }
+
+.product__image {
+  margin: 5.4rem 0 2.5rem;
+  width: 200px; }
+
+.product__title {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.9;
+  letter-spacing: 0.18em;
+  color: #1d1c1c;
+  font-weight: 800;
+  cursor: default; }
+
+.product__value {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.9;
+  letter-spacing: 0.18em;
+  color: #1d1c1c;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  cursor: default; }

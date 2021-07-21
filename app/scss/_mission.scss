@@ -1,0 +1,25 @@
+.mission {
+  padding: 44rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 44rem 10rem 0 10rem;
+  }
+
+  &__image {
+    width: 57rem;
+  }
+  &__text-box {
+    width: 54rem;
+  }
+  &__headline {
+    @include headline;
+  }
+  &__paragraph {
+    @include paragraph;
+    width: 53rem;
+    letter-spacing: 0.18em;
+  }
+}

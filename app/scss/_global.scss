@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Rock+Salt&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+
+  @include respond(tab-port) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-land) {
+    font-size: 62.5%;
+  }
+
+  @include respond(desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(106deg, #dbd8d8 0%, #fcfcfc 50%, #e8e4e4 100%);
+  padding-bottom: 400px;
+}
+
+::selection {
+  background-color: rgba(247, 168, 3, 0.6);
+
+  text-shadow: -1px 1px 0px #fffecef8, -2px 2px 0px rgba(247, 168, 3, 0.9),
+    -3px 3px 0px #fdf3bf;
+}

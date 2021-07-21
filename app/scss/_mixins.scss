@@ -1,0 +1,67 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+@mixin positionAbs($position: absolute, $top: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+@mixin headline {
+  font-family: $rock-salt;
+  font-size: 3.3rem;
+  letter-spacing: 0.18em;
+  color: $primary-black;
+}
+
+@mixin paragraph {
+  font-family: $dosis;
+  font-size: 1.7rem;
+  text-align: justify;
+  line-height: 1.9;
+  color: $primary-black;
+}
+
+@mixin firstLetter {
+  &::before {
+    position: absolute;
+    content: attr(first-letter);
+    top: 0;
+    left: -150%;
+    font-size: 12.5rem;
+    line-height: 1;
+    color: $primary-black;
+    opacity: 10%;
+    font-weight: 400;
+  }
+}
+
+@mixin productDesc {
+  font-family: $dosis;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.9;
+  letter-spacing: 0.18em;
+  color: $primary-black;
+}

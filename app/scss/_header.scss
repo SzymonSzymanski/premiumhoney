@@ -1,0 +1,103 @@
+.header {
+  position: relative;
+  padding: 20rem 3rem 0 3rem;
+  height: 100vh;
+
+  @include respond(tab-port) {
+    padding: 20rem 10rem 0 10rem;
+  }
+
+  &__headline {
+    margin: 0 0 4.2rem;
+    width: 45rem;
+    font-family: $rock-salt;
+    font-size: 7.6rem;
+    letter-spacing: 0.15em;
+    line-height: 1.65;
+    color: $primary-black;
+  }
+
+  &__paragraph {
+    @include paragraph;
+    padding: 1.65rem 0;
+    width: 45rem;
+    letter-spacing: 0.15em;
+  }
+
+  &__cta {
+    &,
+    &:link,
+    &:visited {
+      display: block;
+      margin-top: 5rem;
+      padding: 1.7rem 3.8rem;
+      width: fit-content;
+      border-radius: 12px;
+      font-family: $dosis;
+      font-size: 1.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: $primary-black;
+      background: radial-gradient(circle at center, #f6c358 0%, #f7a803 70%);
+      box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
+      transition: all 0.2s ease;
+    }
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-2px);
+        background: radial-gradient(circle at center, #f6c358 5%, #f7a803 75%);
+        box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25);
+      }
+    }
+    &:active,
+    &:focus {
+      transform: translateY(1px);
+      box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25);
+    }
+  }
+
+  &__decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+    z-index: -1;
+
+    & img {
+      pointer-events: none;
+    }
+  }
+
+  &__image-1 {
+    @include positionAbs(absolute, 0, 80.5%);
+  }
+  &__image-2 {
+    @include positionAbs(absolute, 3%, 70%);
+  }
+  &__image-3 {
+    @include positionAbs(absolute, 21%, 47%);
+    width: 590px;
+    z-index: -1;
+  }
+  &__image-4 {
+    @include positionAbs(absolute, 50%, 89%);
+  }
+  &__image-4-1 {
+    @include positionAbs(absolute, 58%, 94%);
+    width: 230px;
+  }
+  &__image-5 {
+    @include positionAbs(absolute, 72.5%, 60%);
+  }
+  &__image-6 {
+    @include positionAbs(absolute, 50%, 70%);
+    width: 310px;
+  }
+  &__image-7 {
+    @include positionAbs(absolute, 14%, 30%);
+  }
+}
