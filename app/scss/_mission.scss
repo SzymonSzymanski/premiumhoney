@@ -11,12 +11,15 @@
   &__image {
     width: 57rem;
   }
+
   &__text-box {
     width: 54rem;
   }
+
   &__headline {
     @include headline;
   }
+
   &__paragraph {
     @include paragraph;
     width: 53rem;

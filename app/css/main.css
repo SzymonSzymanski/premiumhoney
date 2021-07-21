@@ -1,17 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Rock+Salt&display=swap");
-.first-letter {
-  position: relative; }
-  .first-letter::before {
-    position: absolute;
-    content: attr(first-letter);
-    top: 0;
-    left: -150%;
-    font-size: 12.5rem;
-    line-height: 1;
-    color: #1d1c1c;
-    opacity: 10%;
-    font-weight: 400; }
-
 *,
 *::after,
 *::before {
@@ -39,6 +26,19 @@ body {
 ::selection {
   background-color: rgba(247, 168, 3, 0.6);
   text-shadow: -1px 1px 0px #fffecef8, -2px 2px 0px rgba(247, 168, 3, 0.9), -3px 3px 0px #fdf3bf; }
+
+.first-letter {
+  position: relative; }
+  .first-letter::before {
+    position: absolute;
+    content: attr(first-letter);
+    top: 0;
+    left: -150%;
+    font-size: 12.5rem;
+    line-height: 1;
+    color: #1d1c1c;
+    opacity: 10%;
+    font-weight: 400; }
 
 .header {
   position: relative;
@@ -93,7 +93,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 130%;
+    height: 108rem;
     overflow: hidden;
     z-index: -1; }
     .header__decorations img {
@@ -242,28 +242,34 @@ body {
     border-radius: 12px;
     box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
     transition: all 0.2s ease; }
-    .filter-box__option.active .filter-box__nav-img path {
-      fill: #f7a803; }
+    .filter-box__option.active {
+      cursor: default; }
+      .filter-box__option.active .filter-box__nav-img path {
+        stroke: #f7a803;
+        fill: #f7a803; }
     @media (hover: hover) {
-      .filter-box__option:hover {
+      .filter-box__option:not(.active):hover {
         transform: translateY(-2px);
         box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25); }
-        .filter-box__option:hover:not(.active) .filter-box__nav-img {
+        .filter-box__option:not(.active):hover .filter-box__nav-img {
           stroke-dasharray: 445.265, 0;
           stroke-dashoffset: 0; }
-          .filter-box__option:hover:not(.active) .filter-box__nav-img path {
+          .filter-box__option:not(.active):hover .filter-box__nav-img path {
             stroke: #e49b03; } }
-    .filter-box__option:active, .filter-box__option:focus {
+    .filter-box__option:not(.active):active, .filter-box__option:not(.active):focus {
       transform: translateY(1px);
       box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25); }
   .filter-box__nav-img {
     margin-right: 20px;
     width: 30px;
     height: 27px;
-    stroke-dasharray: 0, 800;
-    stroke-dashoffset: -218.132; }
+    stroke-dasharray: 0, 222.632;
+    stroke-dashoffset: -222.632; }
     .filter-box__nav-img path {
-      transition: all 0.3s ease; }
+      fill: #ebebeb;
+      stroke: #ebebeb;
+      stroke-width: 1rem;
+      transition: all 0.3s ease-in-out; }
 
 .product__image {
   margin: 5.4rem 0 2.5rem;

@@ -44,6 +44,7 @@
       box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
       transition: all 0.2s ease;
     }
+
     @media (hover: hover) {
       &:hover {
         transform: translateY(-2px);
@@ -51,6 +52,7 @@
         box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25);
       }
     }
+
     &:active,
     &:focus {
       transform: translateY(1px);
@@ -63,7 +65,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 130%;
+    height: 108rem;
     overflow: hidden;
     z-index: -1;
 
@@ -75,28 +77,35 @@
   &__image-1 {
     @include positionAbs(absolute, 0, 80.5%);
   }
+
   &__image-2 {
     @include positionAbs(absolute, 3%, 70%);
   }
+
   &__image-3 {
     @include positionAbs(absolute, 21%, 47%);
     width: 590px;
     z-index: -1;
   }
+
   &__image-4 {
     @include positionAbs(absolute, 50%, 89%);
   }
+
   &__image-4-1 {
     @include positionAbs(absolute, 58%, 94%);
     width: 230px;
   }
+
   &__image-5 {
     @include positionAbs(absolute, 72.5%, 60%);
   }
+
   &__image-6 {
     @include positionAbs(absolute, 50%, 70%);
     width: 310px;
   }
+
   &__image-7 {
     @include positionAbs(absolute, 14%, 30%);
   }
