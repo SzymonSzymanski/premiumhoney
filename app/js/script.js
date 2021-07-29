@@ -1,5 +1,5 @@
 'use strict';
-
+//// FILTER LOGIC
 const filters = document.querySelectorAll('.filter-box__option');
 
 filters.forEach((filter) => {
@@ -21,5 +21,15 @@ filters.forEach((filter) => {
     itemsToShow.forEach((el) => {
       el.classList.add('active');
     });
+  });
+});
+
+//// SCROLL SHOW MORE
+const btn = document.querySelector('.header__cta');
+
+btn.addEventListener('click', () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: '#mission', offsetY: -450 },
   });
 });

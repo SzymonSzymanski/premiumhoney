@@ -65,3 +65,34 @@
   letter-spacing: 0.18em;
   color: $primary-black;
 }
+
+@mixin cta {
+  display: block;
+  padding: 1.7rem 3.8rem;
+  width: fit-content;
+  border: none;
+  border-radius: 12px;
+  font-family: $dosis;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: $primary-black;
+  cursor: pointer;
+  background: radial-gradient(circle at center, #f6c358 0%, #f7a803 70%);
+  box-shadow: 0px 4px 10px 0px rgba(99, 42, 3, 0.25);
+  transition: all 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-2px);
+      background: radial-gradient(circle at center, #f6c358 5%, #f7a803 75%);
+      box-shadow: 0px 4px 15px 0px rgba(99, 42, 3, 0.25);
+    }
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25);
+  }
+}
