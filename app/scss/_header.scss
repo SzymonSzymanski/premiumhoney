@@ -1,27 +1,47 @@
 .header {
   position: relative;
-  padding: 20rem 3rem 0 3rem;
-  height: 100vh;
+  padding: 6rem 3rem 0 3rem;
+  height: 83rem;
 
   @include respond(tab-port) {
+    padding: 20rem 3rem 0 3rem;
+  }
+
+  @include respond(desktop) {
+    padding: 10rem 6rem 0 6rem;
+  }
+
+  @include respond(big-desktop) {
     padding: 20rem 10rem 0 10rem;
   }
 
   &__headline {
     margin: 0 0 4.2rem;
-    width: 45rem;
+    width: 100%;
     font-family: $rock-salt;
     font-size: 7.6rem;
     letter-spacing: 0.15em;
     line-height: 1.65;
     color: $primary-black;
+
+    @include respond(tab-port) {
+      width: 45rem;
+    }
   }
 
   &__paragraph {
     @include paragraph;
     padding: 1.65rem 0;
-    width: 45rem;
+    width: 100%;
     letter-spacing: 0.15em;
+
+    @include respond(tab-port) {
+      width: 40rem;
+    }
+
+    @include respond(big-desktop) {
+      width: 45rem;
+    }
   }
 
   &__cta {
@@ -45,38 +65,126 @@
   }
 
   &__image-1 {
-    @include positionAbs(absolute, 0, 80.5%);
+    @include positionAbs(absolute, -5%, 38%);
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(tab-land) {
+      @include positionAbs(absolute, 0, 94.5%);
+      display: block;
+    }
+
+    @include respond(desktop) {
+      @include positionAbs(absolute, 0, 80.5%);
+    }
   }
 
   &__image-2 {
     @include positionAbs(absolute, 3%, 70%);
+    display: none;
+    z-index: -1;
+
+    @include respond(big-desktop) {
+      display: block;
+    }
   }
 
   &__image-3 {
-    @include positionAbs(absolute, 21%, 47%);
+    @include positionAbs(absolute, 3%, 47%);
+    display: none;
     width: 590px;
     z-index: -1;
+
+    @include respond(tab-port) {
+      @include positionAbs(absolute, 3%, 66%);
+      display: block;
+    }
+
+    @include respond(tab-land) {
+      @include positionAbs(absolute, 0, 55%);
+    }
+
+    @include respond(desktop) {
+      @include positionAbs(absolute, 3%, 47%);
+    }
+
+    @include respond(big-desktop) {
+      @include positionAbs(absolute, 21%, 47%);
+    }
   }
 
   &__image-4 {
-    @include positionAbs(absolute, 50%, 89%);
+    @include positionAbs(absolute, 50%, 80%);
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(tab-land) {
+      @include positionAbs(absolute, 54%, 89%);
+      display: block;
+    }
+
+    @include respond(desktop) {
+      @include positionAbs(absolute, 50%, 89%);
+    }
   }
 
   &__image-4-1 {
-    @include positionAbs(absolute, 58%, 94%);
+    @include positionAbs(absolute, 61%, 90%);
     width: 230px;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(tab-land) {
+      @include positionAbs(absolute, 64%, 94%);
+      display: block;
+    }
+
+    @include respond(desktop) {
+      @include positionAbs(absolute, 58%, 94%);
+    }
   }
 
   &__image-5 {
-    @include positionAbs(absolute, 72.5%, 60%);
+    @include positionAbs(absolute, 68%, 60%);
+    display: none;
+    z-index: -2;
+
+    @include respond(tab-land) {
+      @include positionAbs(absolute, 67%, 54%);
+      display: block;
+    }
+
+    @include respond(desktop) {
+      @include positionAbs(absolute, 68%, 60%);
+    }
+
+    @include respond(big-desktop) {
+      @include positionAbs(absolute, 72.5%, 60%);
+    }
   }
 
   &__image-6 {
     @include positionAbs(absolute, 50%, 70%);
     width: 310px;
+    display: none;
+
+    @include respond(big-desktop) {
+      display: block;
+    }
   }
 
   &__image-7 {
     @include positionAbs(absolute, 14%, 30%);
+    display: none;
+
+    @include respond(big-desktop) {
+      display: block;
+    }
   }
 }

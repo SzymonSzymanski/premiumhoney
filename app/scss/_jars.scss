@@ -3,6 +3,11 @@
   height: 100vh;
   background: radial-gradient(circle at center, #f9d486 0%, #f7a803 70%);
   overflow: hidden;
+
+  & img {
+    pointer-events: none;
+  }
+
   &__image-1 {
     position: absolute;
     top: 10%;
