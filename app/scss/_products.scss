@@ -62,10 +62,13 @@
 }
 
 .filter-box {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.5rem;
+  z-index: 10;
 
   @include respond(big-desktop) {
     flex-direction: column;
@@ -385,7 +388,16 @@
   }
 }
 
-.swiper-container {
-  width: 1250px;
-  height: fit-content;
+.sticky-bg {
+  &::after {
+    @include glassBox;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% + 3rem);
+    width: 100vw;
+    z-index: -1;
+  }
 }

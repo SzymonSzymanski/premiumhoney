@@ -33,3 +33,18 @@ btn.addEventListener('click', () => {
     scrollTo: { y: '#mission', offsetY: -450 },
   });
 });
+
+//// ADD BACKGROUND TO FILTERS MENU
+
+window.addEventListener('scroll', function (e) {
+  const filterBox = document.querySelector('.filter-box');
+
+  if (
+    document.documentElement.scrollTop ||
+    document.body.scrollTop > window.innerHeight
+  ) {
+    filterBox.classList.add('sticky-bg');
+  } else {
+    filterBox.classList.remove('sticky-bg');
+  }
+});

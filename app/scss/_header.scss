@@ -170,12 +170,17 @@
   }
 
   &__image-6 {
-    @include positionAbs(absolute, 50%, 70%);
-    width: 310px;
-    display: none;
+    @include positionAbs(absolute, 72%, -18%);
+    width: 160px;
+
+    @include respond(tab-port) {
+      display: none;
+    }
 
     @include respond(big-desktop) {
+      @include positionAbs(absolute, 50%, 70%);
       display: block;
+      width: 310px;
     }
   }
 

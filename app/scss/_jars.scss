@@ -1,8 +1,12 @@
 .jars {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   background: radial-gradient(circle at center, #f9d486 0%, #f7a803 70%);
   overflow: hidden;
+
+  @include respond(desktop) {
+    height: 100vh;
+  }
 
   & img {
     pointer-events: none;
@@ -11,37 +15,63 @@
   &__image-1 {
     position: absolute;
     top: 10%;
-    left: 25%;
-    width: 250px;
+    left: 15%;
+    width: 85px;
     filter: blur(9.3px);
+
+    @include respond(big-desktop) {
+      left: 25%;
+      width: 250px;
+    }
   }
   &__image-2 {
     position: absolute;
     top: 12%;
-    left: 60%;
-    width: 320px;
+    left: 70%;
+    width: 105px;
     filter: blur(5.6px);
     transform: rotate(-15deg) scaleX(-1);
+
+    @include respond(big-desktop) {
+      left: 60%;
+      width: 320px;
+    }
   }
   &__image-3 {
     position: absolute;
-    top: 36%;
+    top: 50%;
     left: 10%;
-    width: 550px;
+    width: 180px;
     filter: blur(3.8px);
+
+    @include respond(big-desktop) {
+      top: 36%;
+      width: 550px;
+    }
   }
   &__image-4 {
     position: absolute;
     top: 50%;
     left: 75%;
-    width: 1200px;
+    width: 400px;
     filter: blur(6.4px);
     transform: rotate(-5deg);
+
+    @include respond(big-desktop) {
+      left: 75%;
+      width: 1200px;
+    }
   }
   &__image-5 {
     position: absolute;
-    top: 10%;
-    left: 35%;
-    width: 610px;
+    top: 17%;
+    left: 25%;
+    width: 220px;
+
+    @include respond(big-desktop) {
+      top: 10%;
+      left: 35%;
+      width: 610px;
+    }
   }
 }

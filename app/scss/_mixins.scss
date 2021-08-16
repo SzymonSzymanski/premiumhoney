@@ -96,3 +96,9 @@
     box-shadow: 0px 4px 5px 0px rgba(99, 42, 3, 0.25);
   }
 }
+
+@mixin glassBox {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba($primary-black, $alpha: 0.1);
+}
