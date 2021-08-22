@@ -19,6 +19,18 @@
     width: 85px;
     filter: blur(9.3px);
 
+    @include respond(tab-port) {
+      width: 125px;
+    }
+
+    @include respond(tab-land) {
+      width: 187px;
+    }
+
+    @include respond(desktop) {
+      width: 212px;
+    }
+
     @include respond(big-desktop) {
       left: 25%;
       width: 250px;
@@ -32,6 +44,18 @@
     filter: blur(5.6px);
     transform: rotate(-15deg) scaleX(-1);
 
+    @include respond(tab-port) {
+      width: 160px;
+    }
+
+    @include respond(tab-land) {
+      width: 240px;
+    }
+
+    @include respond(desktop) {
+      width: 272px;
+    }
+
     @include respond(big-desktop) {
       left: 60%;
       width: 320px;
@@ -44,8 +68,22 @@
     width: 180px;
     filter: blur(3.8px);
 
+    @include respond(tab-port) {
+      width: 275px;
+    }
+
+    @include respond(tab-land) {
+      left: 8%;
+      width: 412px;
+    }
+
+    @include respond(desktop) {
+      width: 467px;
+    }
+
     @include respond(big-desktop) {
       top: 36%;
+      left: 10%;
       width: 550px;
     }
   }
@@ -56,6 +94,20 @@
     width: 400px;
     filter: blur(6.4px);
     transform: rotate(-5deg);
+
+    @include respond(tab-port) {
+      width: 600px;
+    }
+
+    @include respond(tab-land) {
+      top: 25%;
+      width: 900px;
+    }
+
+    @include respond(desktop) {
+      top: 50%;
+      width: 1020px;
+    }
 
     @include respond(big-desktop) {
       left: 75%;
@@ -68,9 +120,25 @@
     left: 25%;
     width: 220px;
 
+    @include respond(tab-port) {
+      top: 18%;
+      left: 30%;
+      width: 305px;
+    }
+
+    @include respond(tab-land) {
+      top: 7%;
+      width: 457px;
+    }
+
+    @include respond(desktop) {
+      top: 20%;
+      left: 35%;
+      width: 518px;
+    }
+
     @include respond(big-desktop) {
       top: 10%;
-      left: 35%;
       width: 610px;
     }
   }

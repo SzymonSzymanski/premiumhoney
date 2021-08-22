@@ -75,6 +75,15 @@
     flex-wrap: nowrap;
   }
 
+  &.sticky-bg {
+    & .filter-box__option {
+      display: none;
+    }
+    & .filter-box__title {
+      padding-top: 20px;
+    }
+  }
+
   &__title {
     @include productDesc;
     flex: 0 0 100%;
@@ -399,5 +408,11 @@
     height: calc(100% + 3rem);
     width: 100vw;
     z-index: -1;
+  }
+}
+
+.filters.sticky-bg {
+  & .filter-box__option {
+    display: flex;
   }
 }

@@ -378,6 +378,10 @@ body {
     .filter-box {
       flex-direction: column;
       flex-wrap: nowrap; } }
+  .filter-box.sticky-bg .filter-box__option {
+    display: none; }
+  .filter-box.sticky-bg .filter-box__title {
+    padding-top: 20px; }
   .filter-box__title {
     font-family: "Dosis", sans-serif;
     font-size: 1.7rem;
@@ -667,6 +671,9 @@ body {
   width: 100vw;
   z-index: -1; }
 
+.filters.sticky-bg .filter-box__option {
+  display: flex; }
+
 .jars {
   position: relative;
   height: 70vh;
@@ -683,6 +690,15 @@ body {
     left: 15%;
     width: 85px;
     filter: blur(9.3px); }
+    @media only screen and (min-width: 37.5em) {
+      .jars__image-1 {
+        width: 125px; } }
+    @media only screen and (min-width: 56.25em) {
+      .jars__image-1 {
+        width: 187px; } }
+    @media only screen and (min-width: 75em) {
+      .jars__image-1 {
+        width: 212px; } }
     @media only screen and (min-width: 116em) {
       .jars__image-1 {
         left: 25%;
@@ -694,6 +710,15 @@ body {
     width: 105px;
     filter: blur(5.6px);
     transform: rotate(-15deg) scaleX(-1); }
+    @media only screen and (min-width: 37.5em) {
+      .jars__image-2 {
+        width: 160px; } }
+    @media only screen and (min-width: 56.25em) {
+      .jars__image-2 {
+        width: 240px; } }
+    @media only screen and (min-width: 75em) {
+      .jars__image-2 {
+        width: 272px; } }
     @media only screen and (min-width: 116em) {
       .jars__image-2 {
         left: 60%;
@@ -704,9 +729,20 @@ body {
     left: 10%;
     width: 180px;
     filter: blur(3.8px); }
+    @media only screen and (min-width: 37.5em) {
+      .jars__image-3 {
+        width: 275px; } }
+    @media only screen and (min-width: 56.25em) {
+      .jars__image-3 {
+        left: 8%;
+        width: 412px; } }
+    @media only screen and (min-width: 75em) {
+      .jars__image-3 {
+        width: 467px; } }
     @media only screen and (min-width: 116em) {
       .jars__image-3 {
         top: 36%;
+        left: 10%;
         width: 550px; } }
   .jars__image-4 {
     position: absolute;
@@ -715,6 +751,17 @@ body {
     width: 400px;
     filter: blur(6.4px);
     transform: rotate(-5deg); }
+    @media only screen and (min-width: 37.5em) {
+      .jars__image-4 {
+        width: 600px; } }
+    @media only screen and (min-width: 56.25em) {
+      .jars__image-4 {
+        top: 25%;
+        width: 900px; } }
+    @media only screen and (min-width: 75em) {
+      .jars__image-4 {
+        top: 50%;
+        width: 1020px; } }
     @media only screen and (min-width: 116em) {
       .jars__image-4 {
         left: 75%;
@@ -724,10 +771,23 @@ body {
     top: 17%;
     left: 25%;
     width: 220px; }
+    @media only screen and (min-width: 37.5em) {
+      .jars__image-5 {
+        top: 18%;
+        left: 30%;
+        width: 305px; } }
+    @media only screen and (min-width: 56.25em) {
+      .jars__image-5 {
+        top: 7%;
+        width: 457px; } }
+    @media only screen and (min-width: 75em) {
+      .jars__image-5 {
+        top: 20%;
+        left: 35%;
+        width: 518px; } }
     @media only screen and (min-width: 116em) {
       .jars__image-5 {
         top: 10%;
-        left: 35%;
         width: 610px; } }
 
 .contact {
