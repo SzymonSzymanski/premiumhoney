@@ -51,9 +51,7 @@
   }
 
   &__decorations {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include positionAbs;
     width: 100%;
     height: 108rem;
     overflow: hidden;

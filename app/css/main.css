@@ -20,7 +20,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background: linear-gradient(106deg, #dbd8d8 0%, #fcfcfc 50%, #e8e4e4 100%); }
+  background: linear-gradient(106deg, #dbd8d8 0%, #fcfcfc 50%, #e8e4e4 100%);
+  overflow-x: hidden; }
 
 ::selection {
   background-color: rgba(247, 168, 3, 0.6);
@@ -369,19 +370,21 @@ body {
 .filter-box {
   position: sticky;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.5rem;
-  z-index: 10; }
+  z-index: 11; }
   @media only screen and (min-width: 116em) {
     .filter-box {
       flex-direction: column;
       flex-wrap: nowrap; } }
-  .filter-box.sticky-bg .filter-box__option {
+  .filter-box.sticky-bg:not(.filters) .filter-box__option {
     display: none; }
   .filter-box.sticky-bg .filter-box__title {
-    padding-top: 20px; }
+    padding-top: 20px;
+    cursor: pointer; }
   .filter-box__title {
     font-family: "Dosis", sans-serif;
     font-size: 1.7rem;
@@ -524,9 +527,9 @@ body {
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.18); } }
       .product__side--back::after {
         position: absolute;
-        content: '';
         top: 0;
         left: 0;
+        content: '';
         width: 100%;
         height: 100%;
         background: url(../img/poly-2.png) no-repeat 130% -150%;
@@ -663,16 +666,13 @@ body {
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 32px 0 rgba(29, 28, 28, 0.1);
   position: absolute;
-  content: '';
   top: 0;
   left: 50%;
+  content: '';
   transform: translateX(-50%);
   height: calc(100% + 3rem);
   width: 100vw;
   z-index: -1; }
-
-.filters.sticky-bg .filter-box__option {
-  display: flex; }
 
 .jars {
   position: relative;

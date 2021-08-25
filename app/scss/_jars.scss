@@ -13,9 +13,7 @@
   }
 
   &__image-1 {
-    position: absolute;
-    top: 10%;
-    left: 15%;
+    @include positionAbs(absolute, 10%, 15%);
     width: 85px;
     filter: blur(9.3px);
 
@@ -37,9 +35,7 @@
     }
   }
   &__image-2 {
-    position: absolute;
-    top: 12%;
-    left: 70%;
+    @include positionAbs(absolute, 12%, 70%);
     width: 105px;
     filter: blur(5.6px);
     transform: rotate(-15deg) scaleX(-1);
@@ -62,9 +58,7 @@
     }
   }
   &__image-3 {
-    position: absolute;
-    top: 50%;
-    left: 10%;
+    @include positionAbs(absolute, 50%, 10%);
     width: 180px;
     filter: blur(3.8px);
 
@@ -88,9 +82,7 @@
     }
   }
   &__image-4 {
-    position: absolute;
-    top: 50%;
-    left: 75%;
+    @include positionAbs(absolute, 50%, 75%);
     width: 400px;
     filter: blur(6.4px);
     transform: rotate(-5deg);
@@ -115,9 +107,7 @@
     }
   }
   &__image-5 {
-    position: absolute;
-    top: 17%;
-    left: 25%;
+    @include positionAbs(absolute, 17%, 25%);
     width: 220px;
 
     @include respond(tab-port) {
