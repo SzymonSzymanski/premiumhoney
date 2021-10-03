@@ -3,7 +3,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 //// SET ATTR OF FIRST LETTER DOM ELEMENT
-// stworzyc array firstletterow, pobrac zawartosc ustawic do kazdego attr taki jak zawartosc
 const firstLetters = document.querySelectorAll('.first-letter');
 
 firstLetters.forEach((firstLetter) =>
@@ -88,7 +87,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: productsContainer,
           endTrigger: contactContainer,
-          start: 'top 98',
+          start: '0 110',
           end: 'center top',
           toggleClass: { targets: filterBox, className: 'sticky-bg' },
         },

@@ -1,0 +1,37 @@
+.footer {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba($color: $primary-yellow, $alpha: 0.2);
+
+  @include respond(tab-port) {
+    flex-direction: row;
+  }
+
+  &__logo {
+    width: 16rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    @include paragraph;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    @include paragraph;
+  }
+}
