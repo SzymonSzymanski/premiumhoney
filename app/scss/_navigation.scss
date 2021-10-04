@@ -1,0 +1,56 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($color: $primary-yellow, $alpha: 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 12;
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    list-style: none;
+
+    @include respond(tab-port) {
+      width: 40%;
+    }
+
+    @include respond(desktop) {
+      width: 20%;
+    }
+  }
+
+  &__link {
+    @include paragraph;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &--logo {
+      font-family: $rock-salt;
+      font-size: 1.2rem;
+
+      @include respond(tab-port) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &--products {
+      margin-right: 0.5rem;
+      cursor: pointer;
+
+      @include respond(tab-port) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 2rem;
+  }
+}

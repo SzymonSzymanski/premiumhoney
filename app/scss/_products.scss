@@ -62,7 +62,7 @@
 }
 
 .filter-box {
-  @include positionAbs(sticky);
+  @include positionAbs(sticky, 41px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

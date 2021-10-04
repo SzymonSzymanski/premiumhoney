@@ -35,9 +35,10 @@ filters.forEach((filter) => {
 });
 
 //// SCROLL SHOW MORE
-const btn = document.querySelector('.header__cta');
+const btnMission = document.querySelector('.header__cta');
+const btnProducts = document.querySelector('.navigation__link--products');
 
-btn.addEventListener('click', () => {
+btnMission.addEventListener('click', () => {
   ScrollTrigger.matchMedia({
     '(min-width: 250px) and (max-width: 600px)': function () {
       gsap.to(window, {
@@ -67,6 +68,41 @@ btn.addEventListener('click', () => {
       gsap.to(window, {
         duration: 1,
         scrollTo: { y: '#mission', offsetY: -450 },
+      });
+    },
+  });
+});
+
+btnProducts.addEventListener('click', () => {
+  ScrollTrigger.matchMedia({
+    '(min-width: 250px) and (max-width: 600px)': function () {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#products', offsetY: -550 },
+      });
+    },
+    '(min-width: 600px) and (max-width: 900px)': function () {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#products', offsetY: -450 },
+      });
+    },
+    '(min-width: 900px) and (max-width: 1200px)': function () {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#products', offsetY: -500 },
+      });
+    },
+    '(min-width: 1200px) and (max-width: 1856px)': function () {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#products', offsetY: -450 },
+      });
+    },
+    '(min-width: 1856px)': function () {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#products', offsetY: -450 },
       });
     },
   });

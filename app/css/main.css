@@ -40,6 +40,52 @@ body {
     opacity: 10%;
     font-weight: 400; }
 
+.navigation {
+  position: sticky;
+  top: 0;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(247, 168, 3, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 12; }
+  .navigation__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    list-style: none; }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__links {
+        width: 40%; } }
+    @media only screen and (min-width: 75em) {
+      .navigation__links {
+        width: 20%; } }
+  .navigation__link {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.9;
+    color: #1d1c1c;
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    .navigation__link--logo {
+      font-family: "Rock Salt", cursive;
+      font-size: 1.2rem; }
+      @media only screen and (min-width: 37.5em) {
+        .navigation__link--logo {
+          font-size: 1.4rem; } }
+    .navigation__link--products {
+      margin-right: 0.5rem;
+      cursor: pointer; }
+      @media only screen and (min-width: 37.5em) {
+        .navigation__link--products {
+          margin-right: 2rem; } }
+  .navigation__image {
+    width: 2rem; }
+
 .header {
   position: relative;
   padding: 6rem 3rem 0 3rem;
@@ -369,7 +415,7 @@ body {
 
 .filter-box {
   position: sticky;
-  top: 0;
+  top: 41px;
   left: 0;
   display: flex;
   flex-direction: row;
@@ -1011,6 +1057,7 @@ body {
     .footer {
       flex-direction: row; } }
   .footer__logo {
+    margin-right: 3rem;
     width: 16rem; }
   .footer__links {
     display: flex;
