@@ -127,7 +127,7 @@ function cssPathTask(done) {
     .pipe(autoprefixer('last 5 versions'))
     .pipe(concat('main.min.css'))
     .pipe(cleanCSS())
-    .pipe(replace('../img/', 'img/'))
+    .pipe(replace('../img/', '../img/'))
     .pipe(dest(config.dist.css));
   done();
 }
